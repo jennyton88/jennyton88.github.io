@@ -1,0 +1,59 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    color:seagreen;
+}
+
+.devbody {
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+
+    /* outline: solid;
+    outline-color: rgb(65, 151, 123); */
+}
+
+.devlogs {
+    display: flex;
+    flex-direction: row;
+
+    /* outline: solid;
+    outline-color: blue; */
+}
+
+.sidebar {
+    padding: 50px;
+
+    /* outline: solid;
+    outline-color: red; */
+}
+
+.log {
+    padding: 50px;
+
+    /* outline: solid;
+    outline-color: pink; */
+}
+
+.devheader {
+    padding: 50px;
+
+    /* outline: solid;
+    outline-color: brown; */
+}
+
+.devfooter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    /* outline:solid;
+    outline-color:cadetblue; */
+}
