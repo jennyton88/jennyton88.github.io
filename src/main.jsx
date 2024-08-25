@@ -1,18 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import './index.css'
+import './index.css';
+import './styles/styles.css';
 
+import Log from './components/Log.jsx';
 
-import Home from './Home.jsx';
-import Portfolio from './Portfolio.jsx';
-import Projects from './Projects.jsx';
-import Devlogs from './Devlogs.jsx';
-import Artworks from './Artworks.jsx';
-import Contact from './Contact.jsx';
-import Error from './Error.jsx';
+import Home from './pages/Home.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Projects from './pages/Projects.jsx';
+import Devlogs from './pages/Devlogs.jsx';
+import Artworks from './pages/Artworks.jsx';
+import Contact from './pages/Contact.jsx';
+import Error from './pages/Error.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,34 +22,43 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-
       }
     ]
   },
   {
     path: "portfolio",
     element: <Portfolio />,
+    errorElement: <Error />,
   },
   {
     path: "projects",
     element: <Projects />,
+    errorElement: <Error />,
   },
   {
     path: "devlogs",
     element: <Devlogs />,
+    errorElement: <Error />,
+  },
+  {
+    path: "devlogs/log/:log_id",
+    element: <Log />,
+    errorElement: <Error />,
   },
   {
     path: "artworks",
     element: <Artworks />,
+    errorElement: <Error />,
   },
   {
     path: "contact",
     element: <Contact />,
+    errorElement: <Error />,
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router= {router} />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
