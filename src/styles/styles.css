@@ -38,6 +38,7 @@ h2 {
 
 .log {
     padding: 50px;
+    white-space: pre-wrap;
 
     /* outline: solid;
     outline-color: pink; */

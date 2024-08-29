@@ -1,0 +1,65 @@
+import { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+
+
+function parseLogText(text_data) {
+  const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
+  const indexes = [];
+
+  for (let i = 0; i < keys.length; i++) {
+    indexes.push(text_data.indexOf(keys[i]));
+  }
+
+  let log_text = {
+    creation_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
+    edit_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
+    title: text_data.substr(indexes[4] + 2, indexes[5] - indexes[4] - 2),
+    summary: text_data.substr(indexes[6] + 2, indexes[7] - indexes[6]  - 2),
+    body: text_data.substr(indexes[7] + 2),
+  };
+
+  return log_text;
+}
+
+
+function Log(){
+    const { log_id } = useParams();
+    const [log, setLog] = useState({});
+
+    useEffect(() => {
+        async function getLogList() {
+            await fetch(`/logs/${log_id}.txt`)
+            .then((response)=> {
+                return response.text();
+            })
+            .then((text_data) => {
+                const info = parseLogText(text_data);
+                setLog(info);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        }
+
+        getLogList();
+    }, []);
+
+    return(
+        <>
+            {
+                !log ? 
+                    <p>Loading...</p> :
+                    <div className="log">
+                        <h3>{log.title}</h3>
+                        <h4>Created: {log.creation_date}</h4>
+                        <h4>Edited: {log.edit_date}</h4>
+                        <p>{log.body}</p>
+                        <Link to={"/devlogs"}><h3>Return</h3></Link>
+                    </div>
+            }
+        </>
+    );
+}
+
+
+export default Log;
