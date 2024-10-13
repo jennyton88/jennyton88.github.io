@@ -26,7 +26,7 @@ function LogSummary({log_id}) {
 
     useEffect(() => {
         async function getLogList() {
-            await fetch(`/logs/${log_id}.txt`)
+            await fetch(`/text_files/${log_id}.txt`)
             .then((response)=> {
                 return response.text();
             })
@@ -48,7 +48,7 @@ function LogSummary({log_id}) {
                 !log ? 
                     <p>Loading...</p> :
                     <div className="log-summary">
-                        <Link to={`log/${log_id}`}><h3>{log.title}</h3></Link>
+                        <Link to={`text_files/${log_id}`}><h3>{log.title}</h3></Link>
                         <h5>Created: {log.creation_date}</h5>
                         <h5>Edited: {log.edit_date}</h5>
                         <p>{log.summary}</p>

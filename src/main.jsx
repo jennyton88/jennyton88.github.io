@@ -41,7 +41,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    path: "devlogs/log/:log_id",
+    path: "devlogs/text_files/:log_id",
     element: <Log />,
     errorElement: <Error />,
   },

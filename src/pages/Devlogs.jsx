@@ -10,7 +10,7 @@ function Devlogs() {
     
     useEffect(() => {
         async function getLogDirectory() {
-            await fetch("/logs/directory.txt")
+            await fetch("/text_files/directory.txt")
             .then((response)=> {
                 return response.text();
             })
