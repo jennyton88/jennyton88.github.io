@@ -55,7 +55,9 @@ const router = createBrowserRouter([
     element: <Contact />,
     errorElement: <Error />,
   }
-])
+], {
+  basename: '/',
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
