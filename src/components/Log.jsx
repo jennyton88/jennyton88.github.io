@@ -51,8 +51,8 @@ function Log(){
                     <p>Loading...</p> :
                     <div className="log">
                         <h3>{log.title}</h3>
-                        <h4>Created: {log.creation_date}</h4>
-                        <h4>Edited: {log.edit_date}</h4>
+                        <h5>Created: {log.creation_date}</h5>
+                        <h5>Edited: {log.edit_date}</h5>
                         <p>{log.body}</p>
                         <Link to={"/devlogs"}><h3>Return</h3></Link>
                     </div>
