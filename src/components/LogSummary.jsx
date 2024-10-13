@@ -26,7 +26,7 @@ function LogSummary({log_id}) {
 
     useEffect(() => {
         async function getLogList() {
-            await fetch(`/logs/${log_id}.txt`)
+            await fetch(`/text_files/${log_id}.txt`)
             .then((response)=> {
                 return response.text();
             })
