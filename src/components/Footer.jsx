@@ -1,7 +1,9 @@
 
 function Footer() {
     return (
-        <footer>author, me. contact info, return to top</footer>
+        <footer className="footer">
+            author, me. contact info, return to top
+        </footer>
     )
 }
 
