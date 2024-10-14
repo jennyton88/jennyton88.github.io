@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Sidebar() {
     return (
-        <>
+        <div className="sidebar">
             <table>
                 <tbody>
                     <tr>
@@ -17,7 +17,7 @@ function Sidebar() {
                     </tr>
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }
 
