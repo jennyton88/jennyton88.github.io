@@ -26,21 +26,21 @@ function Devlogs() {
     }, []);
     
     return (
-        <div className="devbody">
-            <div className="devheader" >
-                    <Header />
-                    <p>Devlogs</p>
+        <div className="container">
+            <div className="header" >
+                <Header />
+                <p>Devlogs</p>
             </div>
-            <div className="devlogs">
-                <div className="post">
+            <div className="content">
+                <div className="logs">
                     {logList.length == 0 ? <p>Loading...</p> : <Logs logs_data={logList}/>}
                 </div>
                 <div className="sidebar">
                     <Sidebar />
                 </div>
             </div>
-            <div className="devfooter" >
-                    <Footer />
+            <div className="footer" >
+                <Footer />
             </div>
         </div>
       );
