@@ -10,7 +10,7 @@ function Project() {
     return (
         <div className="project">
             {/* <img></img> */}
-            <h3>{project.title}</h3>
+            <h4>{project.title}</h4>
             <p>{project.description}</p>
         </div>
     );

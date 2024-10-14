@@ -7,10 +7,9 @@ import Sidebar from '../components/Sidebar.jsx';
 function Projects() {
     return (
         <div className='container'>
-            <Header />
+            <Header title={"Projects"}/>
             <div className='content'>
                 <div className='column'>
-                    <h2>Projects</h2>
                     <div className="row">
                         <Project />
                         <div className="spacer"/>
@@ -31,7 +30,7 @@ function Projects() {
                         <Project />
                         <div className="spacer"/>
                         <Project />
-                    </div>                    
+                    </div>  
                 </div>
                 <Sidebar />
             </div>
