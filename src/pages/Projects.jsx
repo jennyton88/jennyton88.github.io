@@ -6,36 +6,36 @@ import Sidebar from '../components/Sidebar.jsx';
 
 function Projects() {
     return (
-        <div className='devbody'>
-            <div className="devheader" >
-                    <Header />
-            </div>
+        <div className='container'>
+            <Header />
             <div className='content'>
                 <div className='column'>
                     <h2>Projects</h2>
                     <div className="row">
                         <Project />
+                        <div className="spacer"/>
                         <Project />
-                        <Project />
-                    </div>
-                    <div className="row">
-                        <Project />
-                        <Project />
+                        <div className="spacer"/>
                         <Project />
                     </div>
                     <div className="row">
                         <Project />
+                        <div className="spacer"/>
                         <Project />
+                        <div className="spacer"/>
+                        <Project />
+                    </div>
+                    <div className="row">
+                        <Project />
+                        <div className="spacer"/>
+                        <Project />
+                        <div className="spacer"/>
                         <Project />
                     </div>                    
                 </div>
-                <div className="sidebar">
-                        <Sidebar />
-                </div>
+                <Sidebar />
             </div>
-            <div className="devfooter" >
-                    <Footer />
-            </div>
+            <Footer />
         </div>
       );
 }

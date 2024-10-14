@@ -68,8 +68,6 @@ h2 {
 .footer {
     flex-shrink: 0;
     margin-top: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
 
     padding: 50px;
     outline:solid;
@@ -81,22 +79,20 @@ h2 {
     flex-direction: row;
 }
 
-.projectbody {
-    display: flex;
-    flex-direction: row;
-    padding-right:20px;
-}
-
 .row {
     display: flex;
     flex-direction: row;
-    flex: 1 0 auto;
-    padding: 20px;
+    padding: 10px;
+    outline:solid;
+    outline-color:crimson;
 }
 
 .column {
     display: flex;
+    flex: 1 0 auto;
     flex-direction:column;
+    outline:solid;
+    outline-color:chartreuse;
 }
 
 .content {
@@ -105,5 +101,12 @@ h2 {
 }
 
 .project {
-    padding:10px;
+    flex: 1 0 auto;
+    padding-right:20px;
+    outline:solid;
+    outline-color: cornflowerblue;
+}
+
+.spacer {
+    padding: 10px;
 }
