@@ -98,3 +98,7 @@ li {
 .spacer {
     padding: 10px;
 }
+
+.padded-box {
+    padding: 20px;
+}
