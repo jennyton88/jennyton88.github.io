@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+import Footer from '../components/Footer.jsx';
+import Header from '../components/Header.jsx';
+import Sidebar from '../components/Sidebar.jsx';
 
 function parseLogText(text_data) {
   const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
@@ -49,12 +52,20 @@ function Log(){
             {
                 !log ? 
                     <p>Loading...</p> :
-                    <div className="log">
-                        <h3>{log.title}</h3>
-                        <h5>Created: {log.creation_date}</h5>
-                        <h5>Edited: {log.edit_date}</h5>
-                        <p>{log.body}</p>
-                        <Link to={"/devlogs"}><h3>Return</h3></Link>
+
+                    <div className="container">
+                        <Header />
+                        <div className="content">
+                            <div className="log">
+                                <h3>{log.title}</h3>
+                                <h5>Created: {log.creation_date}</h5>
+                                <h5>Edited: {log.edit_date}</h5>
+                                <p>{log.body}</p>
+                                <Link to={"/devlogs"}><h3>Return</h3></Link>
+                            </div>
+                            <Sidebar />
+                        </div>
+                        <Footer />
                     </div>
             }
         </>
