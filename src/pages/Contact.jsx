@@ -5,10 +5,11 @@ import Sidebar from '../components/Sidebar.jsx';
 function Contact() {
     return (
         <div className="container">
-            <Header title={"Contact Me"}/>
+            <Header title={"Links"}/>
             <div className="content">
                 <div className="column">
                     <div className="padded-box">
+                        {/* <>Links here and in footer</> */}
                         <p>If you have any questions, please contact me at this email address: [email].</p>
                         <p>Thank you for your time.</p>
                     </div>

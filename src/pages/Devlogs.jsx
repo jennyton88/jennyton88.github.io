@@ -27,7 +27,7 @@ function Devlogs() {
     
     return (
         <div className="container">
-            <Header />
+            <Header title={"Devlogs"} />
             <div className="content">
                 <div className="logs">
                     {logList.length == 0 ? <p>Loading...</p> : <Logs logs_data={logList}/>}
