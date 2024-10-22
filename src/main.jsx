@@ -11,7 +11,6 @@ import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Projects from './pages/Projects.jsx';
 import Devlogs from './pages/Devlogs.jsx';
-import Artworks from './pages/Artworks.jsx';
 import Contact from './pages/Contact.jsx';
 import Error from './pages/Error.jsx';
 
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <Error />,
-    children: [
-      {
-      }
-    ]
   },
   {
     path: "portfolio",
@@ -43,11 +38,6 @@ const router = createBrowserRouter([
   {
     path: "devlogs/log/:log_id",
     element: <Log />,
-    errorElement: <Error />,
-  },
-  {
-    path: "artworks",
-    element: <Artworks />,
     errorElement: <Error />,
   },
   {
