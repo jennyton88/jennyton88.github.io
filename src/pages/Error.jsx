@@ -5,13 +5,17 @@ function Error() {
     const navigate = useNavigate();
 
     return (
-        <>
-            <p>Error</p>
-            <p>{error.statusText || error.message}</p>
-            <button  type="button" onClick={() => {navigate(-1);}}>
-                Return to previous page
-            </button>
-        </>
+        <div className='container'>
+            <div className='centered-box'>
+                <h1>Error</h1>
+                <h1>{error.status}</h1>
+                <h3>{error.statusText || error.message}</h3>
+                <p>{console.log(error)}</p>
+                <button  type="button" onClick={() => {navigate(-1);}}>
+                    <strong>Return to previous page</strong>
+                </button>
+            </div>
+        </div>
     )
 }
 
