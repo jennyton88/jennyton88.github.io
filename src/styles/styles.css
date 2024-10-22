@@ -9,26 +9,26 @@ li {
 }
 
 .sidebar {
-    margin-left: auto;
+    /* margin-left: auto; */
     padding: 50px;
 
-    outline: solid;
-    outline-color: red;
+    /* outline: solid;
+    outline-color: red; */
 }
 
 .log {
     padding: 50px;
     white-space: pre-wrap;
 
-    outline: solid;
-    outline-color: pink;
+    /* outline: solid;
+    outline-color: pink; */
 }
 
 .header {
     padding: 50px;
 
-    outline: solid;
-    outline-color: brown;
+    /* outline: solid;
+    outline-color: brown; */
 }
 
 .container {
@@ -36,8 +36,8 @@ li {
     flex-direction: column;
     font-size: 15px;
 
-    outline: solid;
-    outline-color: rgb(65, 151, 123);
+    /* outline: solid;
+    outline-color: rgb(65, 151, 123); */
     min-width:  800px;
 
 }
@@ -49,8 +49,8 @@ li {
 
     padding: 20px;
 
-    outline: solid;
-    outline-color: blue;
+    /* outline: solid;
+    outline-color: blue; */
 }
 
 .footer {
@@ -58,8 +58,8 @@ li {
     margin-top: auto;
 
     padding: 50px;
-    outline:solid;
-    outline-color:cadetblue;
+    /* outline:solid;
+    outline-color:cadetblue; */
 }
 
 .content {
@@ -71,16 +71,16 @@ li {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    outline:solid;
-    outline-color:crimson;
+    /* outline:solid;
+    outline-color:crimson; */
 }
 
 .column {
     display: flex;
     flex: 1 0 auto;
     flex-direction:column;
-    outline:solid;
-    outline-color:chartreuse;
+    /* outline:solid;
+    outline-color:chartreuse; */
 }
 
 .content {
@@ -91,8 +91,8 @@ li {
 .project {
     flex: 1 0 auto;
     padding-right:20px;
-    outline:solid;
-    outline-color: cornflowerblue;
+    /* outline:solid;
+    outline-color: cornflowerblue; */
 }
 
 .spacer {
@@ -101,4 +101,12 @@ li {
 
 .padded-box {
     padding: 20px;
+    
+}
+
+.centered-box {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 50px;
 }
