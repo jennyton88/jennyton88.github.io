@@ -7,7 +7,7 @@ import ProjectMapper from '../components/ProjectMapper.jsx';
 function separateProjects(project_list) {
     let projects = [];
     let single_project = [];
-    const data_lines = 5;
+    const data_lines = 6;
     
     let counter = 0;
 
