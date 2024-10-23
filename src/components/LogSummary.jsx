@@ -11,8 +11,8 @@ function parseLogData(text_data) {
     }
 
     let log_text = {
-        creation_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
-        edit_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
+        edit_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
+        creation_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
         title: text_data.substr(indexes[4] + 2, indexes[5] - indexes[4] - 2),
         summary: text_data.substr(indexes[6] + 2, indexes[7] - indexes[6]  - 2),
     };
@@ -48,9 +48,8 @@ function LogSummary({log_id}) {
                 !log ? 
                     <p>Loading...</p> :
                     <div className="log-summary">
-                        <Link to={`log/${log_id}`}><h3>{log.title}</h3></Link>
-                        <h5>Created: {log.creation_date}</h5>
-                        <h5>Edited: {log.edit_date}</h5>
+                        <Link to={`log/${log_id}`}><h4>{log.title}</h4></Link>
+                        <h5>Edited: {log.edit_date}, Created: {log.creation_date}</h5>
                         <p>{log.summary}</p>
                     </div>
             }

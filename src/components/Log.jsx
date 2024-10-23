@@ -54,14 +54,13 @@ function Log(){
                     <p>Loading...</p> :
 
                     <div className="container">
-                        <Header />
+                        <Header title={log.title}/>
                         <div className="content">
                             <div className="log">
-                                <h3>{log.title}</h3>
                                 <h5>Created: {log.creation_date}</h5>
                                 <h5>Edited: {log.edit_date}</h5>
                                 <p>{log.body}</p>
-                                <Link to={"/devlogs"}><h3>Return</h3></Link>
+                                <Link to={"/devlogs"}><h4>Return to Devlogs</h4></Link>
                             </div>
                             <Sidebar />
                         </div>
