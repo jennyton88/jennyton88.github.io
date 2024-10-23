@@ -70,6 +70,8 @@ li {
 .row {
     display: flex;
     flex-direction: row;
+    align-content:space-evenly;
+    column-gap: 20px;
     padding: 10px;
     /* outline:solid;
     outline-color:crimson; */
@@ -77,7 +79,7 @@ li {
 
 .column {
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     flex-direction:column;
     /* outline:solid;
     outline-color:chartreuse; */
@@ -113,4 +115,18 @@ li {
     flex-direction:column;
     align-items: center;
     padding: 50px;
+}
+
+.centered-project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    inline-size: 33%;
+    overflow-wrap: break-word;
+    
+    flex: 1 1 auto;
+    padding: 20px;
+    /* outline:solid;
+    outline-color: cornflowerblue; */
 }
