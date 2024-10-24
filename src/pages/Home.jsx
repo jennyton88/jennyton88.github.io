@@ -1,10 +1,12 @@
-import Sidebar from '../components/Sidebar.jsx';
+import Mainbar from '../components/Mainbar.jsx';
 
 function Home() {
     return (
-        <div className="Home">
-            <p>Home</p>
-            <Sidebar />
+        <div className="container">
+            <div className='centered-box'>
+                <h1>Jenny Ton</h1>
+                <Mainbar />
+            </div>
         </div>
       );
 }

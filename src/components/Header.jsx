@@ -2,7 +2,7 @@
 function Header({title}) {
     return (
         <header className="header">
-            my portfolio
+            Jenny Ton
             <h3>{title}</h3>
         </header>
     )

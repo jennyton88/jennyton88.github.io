@@ -1,15 +1,20 @@
+import { Link } from 'react-router-dom';
+
 import Footer from '../components/Footer.jsx';
 import Header from '../components/Header.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 
+
 function Contact() {
     return (
         <div className="container">
-            <Header title={"Contact Me"}/>
+            <Header title={"Links"}/>
             <div className="content">
                 <div className="column">
                     <div className="padded-box">
-                        <p>If you have any questions, please contact me at this email address: [email].</p>
+                        <Link to={"https://github.com/jennyton88"} className="horizontal-spacer">Github</Link><Link to={"https://jennydevs.itch.io/"}>Itch.io </Link>
+                        <div className="spacer"/>
+                        <p>If you have any questions, please contact me at my email address: [email]</p>
                         <p>Thank you for your time.</p>
                     </div>
                 </div>
