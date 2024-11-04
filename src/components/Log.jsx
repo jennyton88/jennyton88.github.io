@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import Footer from '../components/Footer.jsx';
 import Header from '../components/Header.jsx';
 import Sidebar from '../components/Sidebar.jsx';
+import Markdown from 'react-markdown';
 
 function parseLogText(text_data) {
   const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
@@ -57,10 +58,9 @@ function Log(){
                         <Header title={log.title}/>
                         <div className="content">
                             <div className="log">
-                                <h5>Created: {log.creation_date}</h5>
-                                <h5>Edited: {log.edit_date}</h5>
-                                <p>{log.body}</p>
-                                <Link to={"/devlogs"}><h4>Return to Devlogs</h4></Link>
+                                <strong>Edited:</strong> {log.edit_date} / <strong>Created:</strong> {log.creation_date}
+                                <Markdown>{log.body}</Markdown>
+                                <Link to={"/devlogs"}>Return back to devlogs</Link>
                             </div>
                             <Sidebar />
                         </div>
