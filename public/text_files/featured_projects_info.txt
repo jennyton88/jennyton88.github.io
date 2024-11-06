@@ -1,6 +1,6 @@
 000
 Plate Rush!
 interior.png
-A restaurant with animal customers sitting in their seats, and a chef in the middle of the kitchen surrounded by belts.
+A restaurant with animal customers sitting in their seats, and a chef in the middle of the kitchen surrounded by a conveyor belt.
 A game about serving customers quickly.
 https://jennydevs.itch.io/plate-rush
