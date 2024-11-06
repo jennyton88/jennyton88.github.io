@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import Footer from '../components/Footer.jsx';
 import Header from '../components/Header.jsx';
 import Sidebar from '../components/Sidebar.jsx';
+import Markdown from 'react-markdown';
 
 function parseLogText(text_data) {
   const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
@@ -14,8 +15,8 @@ function parseLogText(text_data) {
   }
 
   let log_text = {
-    creation_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
-    edit_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
+    edit_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
+    creation_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
     title: text_data.substr(indexes[4] + 2, indexes[5] - indexes[4] - 2),
     summary: text_data.substr(indexes[6] + 2, indexes[7] - indexes[6]  - 2),
     body: text_data.substr(indexes[7] + 2),
@@ -57,10 +58,9 @@ function Log(){
                         <Header title={log.title}/>
                         <div className="content">
                             <div className="log">
-                                <h5>Created: {log.creation_date}</h5>
-                                <h5>Edited: {log.edit_date}</h5>
-                                <p>{log.body}</p>
-                                <Link to={"/devlogs"}><h4>Return to Devlogs</h4></Link>
+                                <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
+                                <Markdown>{log.body}</Markdown>
+                                <Link to={"/devlogs"}>Return back to devlogs</Link>
                             </div>
                             <Sidebar />
                         </div>

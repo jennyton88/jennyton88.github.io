@@ -3,7 +3,7 @@ function Header({title}) {
     return (
         <header className="header">
             Jenny Ton
-            <h3>{title}</h3>
+            <h1>{title}</h1>
         </header>
     )
 }
