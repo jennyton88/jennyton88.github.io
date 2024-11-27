@@ -1,6 +1,6 @@
 000
-Plate Rush!
-interior.png
-A restaurant with animal customers sitting in their seats, and a chef in the middle of the kitchen surrounded by a conveyor belt.
+Plate, Rush, Serve!
+plate_logo.png
+Title of the game, "Plate, Rush, Serve!" in front of a background with food like flan and coffee on a table.
 A game about serving customers quickly.
-https://jennydevs.itch.io/plate-rush
+https://jennydevs.itch.io/plate-rush-serve
