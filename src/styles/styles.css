@@ -1,12 +1,11 @@
 #root {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     padding: 2rem;
 }
 
 
 .sidebar {
-    /* margin-left: auto; */
     padding: 50px;
     list-style: none;
 
@@ -15,8 +14,7 @@
 }
 
 .log {
-    padding: 50px;
-    /* white-space: pre-wrap; */
+    padding: 0px 50px;
 
     /* outline: solid;
     outline-color: pink; */
@@ -36,7 +34,7 @@
 
     /* outline: solid;
     outline-color: rgb(65, 151, 123); */
-    min-width:  800px;
+    /* min-width:  800px; */
 
 }
 
@@ -132,4 +130,10 @@
     padding: 20px;
     /* outline:solid;
     outline-color: cornflowerblue; */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #81c200;
+    margin: 20px 0px;
 }
