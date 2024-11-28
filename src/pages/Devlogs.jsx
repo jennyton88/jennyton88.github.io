@@ -29,10 +29,10 @@ function Devlogs() {
         <div className="container">
             <Header title={"Devlogs"} />
             <div className="content">
+                <Sidebar />
                 <div className="logs">
                     {logList.length == 0 ? <p>Loading...</p> : <Logs logs_data={logList}/>}
                 </div>
-                <Sidebar />
             </div>
             <Footer />
         </div>

@@ -10,6 +10,7 @@ function Contact() {
         <div className="container">
             <Header title={"Links"}/>
             <div className="content">
+                <Sidebar />
                 <div className="column">
                     <div className="padded-box">
                         <Link to={"https://github.com/jennyton88"} className="horizontal-spacer">Github</Link><Link to={"https://jennydevs.itch.io/"}>Itch.io </Link>
@@ -18,7 +19,6 @@ function Contact() {
                         <p>Thank you for your time.</p>
                     </div>
                 </div>
-                <Sidebar />
             </div>
             <Footer />
         </div>

@@ -49,10 +49,10 @@ function Projects() {
         <div className='container'>
             <Header title={"Projects"}/>
             <div className='content'>
+                <Sidebar />
                 <div className='column'>
                     {projectInfo.length == 0 ? <p className='centered-box'>Loading...</p> : <ProjectMapper projects_data={projectInfo}/>}
                 </div>
-                <Sidebar />
             </div>
             <Footer />
         </div>

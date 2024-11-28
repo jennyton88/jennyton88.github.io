@@ -50,11 +50,11 @@ function Portfolio() {
         <div className='container'>
             <Header title={"Portfolio"}/>
             <div className='content'>
+                <Sidebar />
                 <div className='column'>
                     <h3 className='centered'>Featured Projects</h3>
                     {projectInfo.length == 0 ? <p className='centered-box'>Loading...</p> : <ProjectMapper projects_data={projectInfo}/>}
                 </div>
-                <Sidebar />
             </div>
             <Footer />
         </div>
