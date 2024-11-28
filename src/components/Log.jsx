@@ -53,19 +53,19 @@ function Log(){
             {
                 !log ? 
                     <p>Loading...</p> :
-
-                    <div className="container">
-                        <Header title={log.title}/>
-                        <div className="content">
-                            <div className="log">
-                                <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
-                                <Markdown>{log.body}</Markdown>
-                                <Link to={"/devlogs"}>Return back to devlogs</Link>
+                    
+                        <div className="container">
+                            <div className="content">
+                                <Sidebar />
+                                <div className="log">
+                                    <h1>{log.title}</h1>
+                                    <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
+                                    <Markdown>{log.body}</Markdown>
+                                    <Link to={"/devlogs"}>Return back to devlogs</Link>
+                                </div>
                             </div>
-                            <Sidebar />
+                            <Footer />
                         </div>
-                        <Footer />
-                    </div>
             }
         </>
     );
