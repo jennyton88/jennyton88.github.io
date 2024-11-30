@@ -1,7 +1,7 @@
 import LogSummary from './LogSummary.jsx';
 
 
-function Logs({logs_data}) {
+function LogMapper({logs_data}) {
 
     return (
         <>
@@ -10,4 +10,4 @@ function Logs({logs_data}) {
     )
 }
 
-export default Logs;
+export default LogMapper;
