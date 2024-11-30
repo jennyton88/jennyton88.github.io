@@ -1,9 +1,8 @@
 
 function Header({title}) {
     return (
-        <header className="header">
+        <header>
             <h1>{title}</h1>
-            <hr/>
         </header>
     )
 }

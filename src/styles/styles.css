@@ -20,11 +20,9 @@
     outline-color: pink; */
 }
 
-.header {
+header {
     padding: 50px;
-
-    /* outline: solid;
-    outline-color: brown; */
+    border-bottom: 1px solid #81c200;
 }
 
 .container {
@@ -49,13 +47,9 @@
     outline-color: blue; */
 }
 
-.footer {
-    flex-shrink: 0;
-    margin-top: auto;
-
+footer {
     padding: 50px;
-    /* outline:solid;
-    outline-color:cadetblue; */
+    border-top: 1px solid #81c200;
 }
 
 .content {
