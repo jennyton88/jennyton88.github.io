@@ -11,12 +11,13 @@ function Contact() {
             <Header title={"Links"}/>
             <div className="content">
                 <Sidebar />
-                <div className="column">
-                    <div className="padded-box">
-                        <Link to={"https://github.com/jennyton88"} className="horizontal-spacer">Github</Link><Link to={"https://jennydevs.itch.io/"}>Itch.io </Link>
-                        <div className="spacer"/>
-                        <p>If you have any questions, please contact me at my email address: [email]</p>
-                        <p>Thank you for your time.</p>
+                <div className="padded-box">
+                    <p>If you have any questions, please contact me at my email address: [email]</p>
+                    <p>Thank you for your time.</p>
+                    <h3>External Links</h3>
+                    <div style={{listStyle: 'none'}}>
+                        <li><Link to={"https://github.com/jennyton88"}>Github</Link></li>
+                        <li><Link to={"https://jennydevs.itch.io/"}>Itch</Link></li>
                     </div>
                 </div>
             </div>
