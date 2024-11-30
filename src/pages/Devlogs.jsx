@@ -30,7 +30,7 @@ function Devlogs() {
             <Header title={"Devlogs"} />
             <div className="content">
                 <Sidebar />
-                <div className="logs">
+                <div>
                     {logList.length == 0 ? <p>Loading...</p> : <LogMapper logs_data={logList}/>}
                 </div>
             </div>

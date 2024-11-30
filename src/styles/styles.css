@@ -1,23 +1,16 @@
 #root {
-    /* max-width: 1280px; */
     margin: 0 auto;
     padding: 2rem;
 }
 
-
 .sidebar {
     padding: 50px;
     list-style: none;
-
-    /* outline: solid;
-    outline-color: red; */
 }
 
 .log {
-    padding: 0px 50px;
-
-    /* outline: solid;
-    outline-color: pink; */
+    padding: 0px 50px 50px 0px;
+    max-width: 47em;
 }
 
 header {
@@ -29,22 +22,6 @@ header {
     display: flex;
     flex-direction: column;
     font-size: 15px;
-
-    /* outline: solid;
-    outline-color: rgb(65, 151, 123); */
-    /* min-width:  800px; */
-
-}
-
-.logs {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-
-    padding: 20px;
-
-    /* outline: solid;
-    outline-color: blue; */
 }
 
 footer {
@@ -63,16 +40,12 @@ footer {
     align-content:space-evenly;
     column-gap: 20px;
     padding: 10px;
-    /* outline:solid;
-    outline-color:crimson; */
 }
 
 .column {
     display: flex;
     flex: 1 1 auto;
     flex-direction:column;
-    /* outline:solid;
-    outline-color:chartreuse; */
 }
 
 .content {
@@ -83,8 +56,6 @@ footer {
 .project {
     flex: 1 0 auto;
     padding-right:20px;
-    /* outline:solid;
-    outline-color: cornflowerblue; */
 }
 
 .spacer {
@@ -122,12 +93,8 @@ footer {
     
     flex: 1 1 auto;
     padding: 20px;
-    /* outline:solid;
-    outline-color: cornflowerblue; */
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid #81c200;
-    margin: 20px 0px;
+.log-summary {
+    padding: 10px 0px 10px 10px;
 }
