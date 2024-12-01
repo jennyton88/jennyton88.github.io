@@ -1,6 +1,0 @@
-000
-Plate, Rush, Serve!
-plate_logo.png
-Title of the game, "Plate, Rush, Serve!" in front of a background with food like flan and coffee on a table.
-A game about serving customers quickly.
-https://jennydevs.itch.io/plate-rush-serve

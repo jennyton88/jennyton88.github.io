@@ -8,7 +8,6 @@ import './styles/styles.css';
 import Log from './components/Log.jsx';
 
 import Home from './pages/Home.jsx';
-import Portfolio from './pages/Portfolio.jsx';
 import Projects from './pages/Projects.jsx';
 import Devlogs from './pages/Devlogs.jsx';
 import Contact from './pages/Contact.jsx';
@@ -18,11 +17,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <Error />,
-  },
-  {
-    path: "portfolio",
-    element: <Portfolio />,
     errorElement: <Error />,
   },
   {
