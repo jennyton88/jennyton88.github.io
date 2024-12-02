@@ -8,6 +8,7 @@
         align-self: center;
         padding: 30px;
         list-style: none;
+        border-bottom: 1px solid #81c200;
     }
     
     .log {
@@ -97,11 +98,18 @@
 
     .sidebar {
         align-self: auto;
+        border-right: 1px solid #81c200;
+        border-bottom: 0px;
     }
 
     .content {
         flex-direction: row;
         align-content: auto;
+    }
+
+    .log {
+        padding: 0px 50px 50px 30px;
+        max-width: 47em;
     }
 
     .row {
@@ -114,5 +122,9 @@
     .column {
         flex: 1 1 auto;
         align-content: auto;
+    }
+
+    .log-list {
+        padding: 0px 10px 10px 30px;
     }
 }
