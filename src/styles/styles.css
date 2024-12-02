@@ -1,4 +1,4 @@
-@media screen and (min-width:300px)  {
+@media screen and (min-width: 15em)  {
     #root {
         margin: 0 auto;
         padding: 2rem;
@@ -86,7 +86,7 @@
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 40em) {
     header {
         align-self: auto;
     }
