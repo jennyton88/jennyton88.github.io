@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Mainbar() {
     return (
-        <nav className="centered-box">
+        <nav className="centered-box" style={{paddingTop: '10px'}}>
             <li><Link to={'/projects'}>Projects</Link></li>
             <li><Link to={'/devlogs'}>Devlogs</Link></li>
             <li><Link to={'/contact'}>Contact</Link></li>
