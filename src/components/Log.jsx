@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import Sidebar from '../components/Sidebar.jsx';
 import Markdown from 'react-markdown';
+import Footer from '../components/Footer.jsx';
+import Sidebar from '../components/Sidebar.jsx';
 
 function parseLogText(text_data) {
   const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
@@ -53,19 +52,19 @@ function Log(){
             {
                 !log ? 
                     <p>Loading...</p> :
-
-                    <div className="container">
-                        <Header title={log.title}/>
-                        <div className="content">
-                            <div className="log">
-                                <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
-                                <Markdown>{log.body}</Markdown>
-                                <Link to={"/devlogs"}>Return back to devlogs</Link>
+                    
+                        <div className="container">
+                            <div className="content">
+                                <Sidebar />
+                                <div className="log">
+                                    <h1>{log.title}</h1>
+                                    <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
+                                    <Markdown>{log.body}</Markdown>
+                                    <Link to={"/devlogs"}>Return back to devlogs</Link>
+                                </div>
                             </div>
-                            <Sidebar />
+                            <Footer />
                         </div>
-                        <Footer />
-                    </div>
             }
         </>
     );

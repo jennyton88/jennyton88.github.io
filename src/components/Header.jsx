@@ -1,8 +1,7 @@
 
 function Header({title}) {
     return (
-        <header className="header">
-            Jenny Ton
+        <header>
             <h1>{title}</h1>
         </header>
     )

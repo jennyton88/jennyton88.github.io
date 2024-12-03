@@ -2,14 +2,20 @@ import { Link } from 'react-router-dom';
 
 function Mainbar() {
     return (
-        <nav className="centered-box">
-            <li><Link to={'/portfolio'}>Portfolio</Link></li>
+        <nav className="centered-box" style={{paddingTop: '10px'}}>
             <li><Link to={'/projects'}>Projects</Link></li>
             <li><Link to={'/devlogs'}>Devlogs</Link></li>
             <li><Link to={'/contact'}>Contact</Link></li>
-            <h4>Links</h4> 
+            <h4 
+                style={{
+                    paddingTop: '15px',
+                    borderTop: '1px solid #81c200',
+                    paddingBottom: '15px',
+                    borderBottom: '1px solid #81c200'
+                }}>Links
+            </h4> 
             <Link to={"https://github.com/jennyton88"}>Github</Link>
-            <Link to={"https://jennydevs.itch.io/"}>Itch.io </Link>
+            <Link to={"https://jennydevs.itch.io/"}>Itch</Link>
         </nav>
     )
 }

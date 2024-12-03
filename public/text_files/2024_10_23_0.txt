@@ -1,5 +1,5 @@
-E[2024.06.11]E
-D[2024.23.10]D
+E[2024.11.06]E
+D[2024.10.23]D
 T[[Plate Rush!] Devlog #1: Conveyor Belts and Items]T
 S[I talk about my in-progress game idea and mainly about my implementation of the conveyor belt.]S
 ## >> The Game!

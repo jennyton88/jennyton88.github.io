@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Footer from '../components/Footer.jsx';
 import Header from '../components/Header.jsx';
-import Logs from '../components/Logs.jsx';
+import LogMapper from '../components/LogMapper.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 
 function Devlogs() {
@@ -29,10 +29,10 @@ function Devlogs() {
         <div className="container">
             <Header title={"Devlogs"} />
             <div className="content">
-                <div className="logs">
-                    {logList.length == 0 ? <p>Loading...</p> : <Logs logs_data={logList}/>}
-                </div>
                 <Sidebar />
+                <div className='log-list'>
+                    {logList.length == 0 ? <p>Loading...</p> : <LogMapper logs_data={logList}/>}
+                </div>
             </div>
             <Footer />
         </div>
