@@ -1,5 +1,5 @@
-E[2024.01.11]E
-D[2024.16.08]D
+E[2024.11.01]E
+D[2024.08.16]D
 T[[Creating the Website] Devlog #1: Hello World!]T
 S[Website introduction and overview of the devlogs section.]S
 
