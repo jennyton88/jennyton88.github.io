@@ -1,8 +1,7 @@
-E[2024.11.01]E
-D[2024.08.16]D
-T[[Creating the Website] Devlog #1: Hello World!]T
-S[Website introduction and overview of the devlogs section.]S
-
+2024.11.01;
+2024.08.16;
+[Creating the Website] Devlog #1: Hello World!;
+Website introduction and overview of the devlogs section.;
 ## >> Intro
 
 Hello, and welcome to my website.

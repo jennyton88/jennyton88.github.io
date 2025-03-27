@@ -1,8 +1,7 @@
-E[2024.12.03]E
-D[2024.11.06]D
-T[[Plate Rush! -> Plate, Rush, Serve!] Devlog #2: Customers / Fixing Items / Published!]T
-S[I talk about the customers and how I store items differently.]S
-
+2024.12.03;
+2024.11.06;
+[Plate Rush! -> Plate, Rush, Serve!] Devlog #2: Customers / Fixing Items / Published!;
+I talk about the customers and how I store items differently.;
 ## >> Game Published!
 
 Hello everyone! The game, *Plate Rush!* has been renamed to, *Plate, Rush, Serve!* Adding the third word in the title made it sound more like a countdown. Plate... Rush... SERVE!
