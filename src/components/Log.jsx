@@ -2,26 +2,27 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import Markdown from 'react-markdown';
+
 import Footer from '../components/Footer.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 
 function parseLogText(text_data) {
-  const keys = ["E[", "]E", "D[", "]D", "T[", "]T","S[", "]S"];
-  const indexes = [];
+    const line_length = 4;
+    const indexes = [];
 
-  for (let i = 0; i < keys.length; i++) {
-    indexes.push(text_data.indexOf(keys[i]));
-  }
+    var curr_index = 0;
+    for (let i = 0; i < line_length; i++) {
+        curr_index = text_data.indexOf(";", curr_index + 1);
+        indexes.push(curr_index);
+    }
 
-  let log_text = {
-    edit_date: text_data.substr(indexes[0] + 2, indexes[1] - 2),
-    creation_date: text_data.substr(indexes[2] + 2, indexes[3] - indexes[2] - 2),
-    title: text_data.substr(indexes[4] + 2, indexes[5] - indexes[4] - 2),
-    summary: text_data.substr(indexes[6] + 2, indexes[7] - indexes[6]  - 2),
-    body: text_data.substr(indexes[7] + 2),
-  };
-
-  return log_text;
+    return {
+        edit_date: text_data.substring(0, indexes[0]),
+        creation_date: text_data.substring(indexes[0] + 1, indexes[1]),
+        title: text_data.substring(indexes[1] + 1, indexes[2]),
+        summary: text_data.substring(indexes[2] + 1, indexes[3]),
+        body: text_data.substring(indexes[3] + 1 ),
+    };
 }
 
 
@@ -40,7 +41,7 @@ function Log(){
                 setLog(info);
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
         }
 
@@ -52,19 +53,18 @@ function Log(){
             {
                 !log ? 
                     <p>Loading...</p> :
-                    
-                        <div className="container">
-                            <div className="content">
-                                <Sidebar />
-                                <div className="log">
-                                    <h1>{log.title}</h1>
-                                    <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
-                                    <Markdown>{log.body}</Markdown>
-                                    <Link to={"/devlogs"}>Return back to devlogs</Link>
-                                </div>
+                    <div className="container">
+                        <div className="content">
+                            <Sidebar />
+                            <div className="log">
+                                <h1>{log.title}</h1>
+                                <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
+                                <Markdown>{log.body}</Markdown>
+                                <Link to={"/devlogs"}>Return back to devlogs</Link>
                             </div>
-                            <Footer />
                         </div>
+                        <Footer />
+                    </div>
             }
         </>
     );
