@@ -1,12 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 import './styles/index.css';
 import './styles/styles.css';
-
 import Log from './pages/Log.jsx';
-
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Devlogs from './pages/Devlogs.jsx';

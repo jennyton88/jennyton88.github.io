@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 function Project({project_data}) {
     const [project] = useState({
         title: project_data[1],
