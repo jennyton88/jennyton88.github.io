@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import Sidebar from '../components/Sidebar.jsx';
+import Topbar from '../components/Topbar.jsx';
 import ProjectMapper from '../components/ProjectMapper.jsx';
+import Footer from '../components/Footer.jsx';
+
 
 function separateProjects(project_list) {
     let projects = [];
@@ -38,7 +38,7 @@ function Projects() {
                 setProjectInfo(separateProjects(project_list.split("\n")));
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
         }
 
@@ -47,11 +47,15 @@ function Projects() {
 
     return (
         <div className='container'>
-            <Header title={"Projects"}/>
+            <header><h1 className='front-name'>Projects</h1></header>
+            <Topbar/>
             <div className='content'>
-                <Sidebar />
                 <div className='column'>
-                    {projectInfo.length == 0 ? <p className='centered-box'>Loading...</p> : <ProjectMapper projects_data={projectInfo}/>}
+                    {
+                        projectInfo.length == 0 ? 
+                        <p className='centered-box'>Loading...</p> : 
+                        <ProjectMapper projects_data={projectInfo}/>
+                    }
                 </div>
             </div>
             <Footer />
