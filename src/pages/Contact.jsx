@@ -1,25 +1,30 @@
 import { Link } from 'react-router-dom';
-
+import { FaMastodon } from 'react-icons/fa';
+import { FaBluesky } from 'react-icons/fa6';
 import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import Sidebar from '../components/Sidebar.jsx';
+import Topbar from '../components/Topbar.jsx';
 
 
 function Contact() {
     return (
         <div className="container">
-            <Header title={"Links"}/>
+            <header><h1 className='front-name'>Contact Me</h1></header>
+            <Topbar />
             <div className="content">
-                <Sidebar />
-                <div className="padded-box">
-                    <p>If you have any questions, please contact me at my email address: [email]</p>
-                    <p>Thank you for your time.</p>
-                    <h3>External Links</h3>
-                    <div style={{listStyle: 'none'}}>
-                        <li><Link to={"https://github.com/jennyton88"}>Github</Link></li>
-                        <li><Link to={"https://jennydevs.itch.io/"}>Itch</Link></li>
-                    </div>
-                </div>
+                <h2>Contact me through my social media!</h2>
+                <p>Thank you for taking the time to visit.</p>
+                <nav style={{listStyle: 'none'}}>
+                    <li>
+                        <FaMastodon className='colored-logo'/>
+                        <div className='left-hori-spacer' />
+                        <Link to={'https://mastodon.gamedev.place/@jennydevs'}>@jennydevs</Link>
+                    </li>
+                    <li>
+                        <FaBluesky className='colored-logo'/>
+                        <div className='left-hori-spacer' />
+                        <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}>@jennydevs.bsky.social</Link>
+                    </li>
+                </nav>
             </div>
             <Footer />
         </div>
