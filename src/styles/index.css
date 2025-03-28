@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Atkinson Hyperlegible Next', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,7 +14,8 @@ html {
 }
 
 body {
+  background-color: rgb(148, 232, 244);
   height: 100%;
   margin: 0;
-  display: flex;
+  color: rgb(20, 20, 80);
 }

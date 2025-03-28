@@ -3,8 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 
 import Markdown from 'react-markdown';
 
+import Topbar from '../components/Topbar.jsx';
 import Footer from '../components/Footer.jsx';
-import Sidebar from '../components/Sidebar.jsx';
 
 function parseLogText(text_data) {
     const line_length = 4;
@@ -46,7 +46,7 @@ function Log(){
         }
 
         getLogList();
-    }, []);
+    }, [log_id]);
 
     return(
         <>
@@ -54,8 +54,9 @@ function Log(){
                 !log ? 
                     <p>Loading...</p> :
                     <div className="container">
+                        <header><h1 className='front-name'>Devlog</h1></header>
+                        <Topbar/>
                         <div className="content">
-                            <Sidebar />
                             <div className="log">
                                 <h1>{log.title}</h1>
                                 <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
