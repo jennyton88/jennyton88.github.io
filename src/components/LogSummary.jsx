@@ -42,7 +42,7 @@ function LogSummary({log_id}) {
         }
 
         getLogList();
-    }, []);
+    }, [log_id]);
 
     return (
         <>
