@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function Project({project_data}) {
+function Project({ project_data }) {
     const [project] = useState({
         title: project_data[1],
         img_name: project_data[2],

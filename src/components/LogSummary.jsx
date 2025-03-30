@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';

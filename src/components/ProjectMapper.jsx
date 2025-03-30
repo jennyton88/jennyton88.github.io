@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Project from "./Project.jsx";
 
@@ -28,7 +29,7 @@ function groupProjects(projects_data) {
 }
 
 
-function ProjectMapper({projects_data}) {
+function ProjectMapper({ projects_data }) {
     const [projectGroups] = useState(groupProjects(projects_data));
 
     return (
