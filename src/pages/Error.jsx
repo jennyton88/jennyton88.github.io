@@ -6,18 +6,16 @@ function Error() {
     const navigate = useNavigate();
 
     return (
-        <div className='container'>
-            <div className='centered-box'>
-                <h1>Error</h1>
-                <h1>{error.status}</h1>
-                <h3>{error.statusText || error.message}</h3>
-                <p>{console.log(error)}</p>
-                <button  type="button" onClick={() => {navigate(-1);}}>
-                    <strong>Return to previous page</strong>
-                </button>
-            </div>
+        <div className='container' style={{textAlign:'center', paddingBottom:'50px'}}>
+            <header>
+                <h1 className='front-name'>{error.status}</h1>
+            </header>
+            <p>{error.statusText}</p>
+            <p>{error.error.message}</p>
+            { console.error(error) }
+            <button  type="button" onClick={() => { navigate(-1); }}>Return to previous page</button>
         </div>
-    )
+    );
 }
 
 export default Error;
