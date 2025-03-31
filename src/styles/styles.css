@@ -13,13 +13,11 @@
     .front-name {
         font-size: 3rem;
         color: rgb(20,30,100);
-        border-bottom: 10px solid rgb(148, 232, 244);
-        /* border-bottom: 10px solid rgb(200, 245, 144); */
+        border-bottom: 10px solid rgb(200, 245, 144);
     }
 
     .colored-logo {
-        color: rgb(80, 150, 100);
-        /* color: rgb(179, 241, 176); */
+        color: rgb(44, 150, 30);
         vertical-align: sub;
     }
 
@@ -32,10 +30,9 @@
     .topbar {
         top: 0;
         position: sticky;
-        background-color: rgb(255, 190, 20);
+        background-color: rgb(255, 220, 80);
         text-align: center;
         border-bottom: 10px solid white;
-        /* margin: 20px -10px 0 -10px; */
         margin: 20px 0 0 0;
         padding: 10px;
     }
@@ -56,9 +53,9 @@
     footer {
         text-align: center;
         border-top: 10px solid white;
-        background-color: rgb(255, 190, 20);
+        /* background-color: rgb(255, 190, 20); */
+        background-color: rgb(255, 220, 80);
         padding: 20px 50px;
-        /* margin: -10px -10px 0 -10px; */
     }
     
     .content {
@@ -82,13 +79,15 @@
     
     .hori-spacer {
         display: inline-block;
-        padding-left: 5px;
-        padding-right: 30px;
+        padding-left: 10px;
+        text-align:'center';
+
+        list-style: none;
     }
 
     .left-hori-spacer {
         display: inline-block;
-        margin-left: 3px;
+        padding-right: 3px;
     }
     
     .centered-project-box {
@@ -103,16 +102,18 @@
 }
 
 /* Horizontal screens */
-@media screen and (min-width: 40em) {
-    /* Header on top of every page */
+@media screen and (min-width: 50em) {
     .front-name {
         font-size: 5rem;
+    }
+
+    .hori-spacer {
+        padding-right: 30px;
     }
 
     .content {
         margin: auto 50px;
         padding: 20px 50px 20px 50px;
-        /* display: inline-block; */
     }
 
     .log {
