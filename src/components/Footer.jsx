@@ -7,25 +7,29 @@ function Footer() {
     return (
         <footer>
             <nav className='footer-padding'>
-                <FaHome className='colored-logo'/>
-                <div className='left-hori-spacer'/>
-                <Link to={'/'}>Home</Link><div className='hori-spacer'/>
-                <FaGithub className='colored-logo'/>
-                <div className='left-hori-spacer'/>
-                <Link to={'https://github.com/jennyton88'}>Github</Link>
-                <div className='hori-spacer'/>
-                <FaItchIo className='colored-logo'/>
-                <div className='left-hori-spacer'/>
-                <Link to={'https://jennydevs.itch.io/'}>Itch.io</Link>
-                <div className='hori-spacer'/>
-                <FaMastodon className='colored-logo'/>
-                <div className='left-hori-spacer'/>
-                <Link to={'https://mastodon.gamedev.place/@jennydevs'}>Mastodon</Link>
-                <div className='hori-spacer'/>
-                <FaBluesky className='colored-logo'/>
-                <div className='left-hori-spacer'/>
-                <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}>Bluesky</Link>
+                <li className='hori-spacer'>
+                    <FaHome className='colored-logo left-hori-spacer'/>
+                    <div className='left-hori-spacer'/>
+                    <Link to={'/'}>Home</Link>
+                </li>
+                <li className='hori-spacer'>
+                    <FaGithub className='colored-logo left-hori-spacer'/>
+                    <Link to={'https://github.com/jennyton88'}>Github</Link>
+                </li>
+                <li className='hori-spacer'>
+                    <FaItchIo className='colored-logo left-hori-spacer'/>
+                    <Link to={'https://jennydevs.itch.io/'}>Itch.io</Link>
+                </li>
+                <li className='hori-spacer'>
+                    <FaMastodon className='colored-logo left-hori-spacer'/>
+                    <Link to={'https://mastodon.gamedev.place/@jennydevs'}>Mastodon</Link>
+                </li>
+                <li className='hori-spacer'>
+                    <FaBluesky className='colored-logo left-hori-spacer'/>
+                    <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}>Bluesky</Link>
+                </li>
             </nav>
+            <div style={{paddingTop:'6px'}}><small>© Jenny Ton</small></div>
         </footer>
     );
 }

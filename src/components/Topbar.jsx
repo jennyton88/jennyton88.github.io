@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom';
 function Topbar() {
     return (
         <nav className='topbar'>
-            <div style={{verticalAlign:'center'}}>
-            <Link to={'/'}>Home</Link> 
-            <div className='hori-spacer'/>
-            <Link to={'/projects'}>Projects</Link>
-            <div className='hori-spacer'/>
-            <Link to={'/devlogs'}>Devlogs</Link>
-            <div className='hori-spacer'/>
-            <Link to={'/contact'}>Contact</Link>
-            </div>
+            <li className='hori-spacer'><Link to={'/'}>Home</Link></li>
+            <li className='hori-spacer'><Link to={'/projects'}>Projects</Link></li>
+            <li className='hori-spacer'><Link to={'/devlogs'}>Devlogs</Link></li>
+            <li className='hori-spacer'><Link to={'/contact'}>Contact</Link></li>
         </nav>
     );
 }
