@@ -8,10 +8,9 @@ function Error() {
     return (
         <div className='container' style={{textAlign:'center', paddingBottom:'50px'}}>
             <header>
-                <h1 className='front-name'>{error.status}</h1>
+                <h1 className='front-name'>{error.status || 'Error'}</h1>
             </header>
-            <p>{error.statusText}</p>
-            <p>{error.error.message}</p>
+            <p>{error.statusText || error.message}</p>
             { console.error(error) }
             <button  type="button" onClick={() => { navigate(-1); }}>Return to previous page</button>
         </div>
