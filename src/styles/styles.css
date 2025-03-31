@@ -94,18 +94,11 @@
     .centered-project-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    
-        inline-size: 33%;
-        overflow-wrap: break-word;
-        
-        flex: 1 1 auto;
-        padding: 20px;
-        align-self: center;
+        text-align: center;
     }
-    
+
     .log-summary {
-        padding: 10px 0 10px 0;
+        padding: 10px 0 0 0;
     }
 }
 
@@ -115,14 +108,6 @@
     .front-name {
         font-size: 5rem;
     }
-
-    /* .sidebar {
-        font-size: 18px;
-        display: inline-block;
-        list-style: none;
-        padding: 0px 50px;
-        background-color: white;
-    } */
 
     .content {
         margin: auto 50px;
@@ -145,6 +130,17 @@
     .column {
         flex: 1 1 auto;
         align-content: auto;
+    }
+
+    .centered-project-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        inline-size: 33%;
+
+        flex: auto;
+        align-self: center;
     }
 
     .log-list {
