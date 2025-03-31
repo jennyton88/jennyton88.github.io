@@ -57,9 +57,11 @@ function Log(){
                         <Topbar/>
                         <div className="content">
                             <div className="log">
-                                <h1>{log.title}</h1>
-                                <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
-                                <Markdown>{log.body}</Markdown>
+                                <article>
+                                    <h1>{log.title}</h1>
+                                    <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
+                                    <Markdown>{log.body}</Markdown>
+                                </article>
                                 <Link to={"/devlogs"}>Return back to devlogs</Link>
                             </div>
                         </div>
