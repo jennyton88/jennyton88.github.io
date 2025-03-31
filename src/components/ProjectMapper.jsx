@@ -5,23 +5,14 @@ import Project from "./Project.jsx";
 
 function groupProjects(projects_data) {
     let projects_per_row = 3;
-
-    let project_counter = 0;
-
     let total_grouped_projects = [];
     let grouped_projects = [];
 
-    for (let i = 0; i < projects_data.length; i++) {
+    for (let i = projects_data.length - 1; i > -1; i--) {
         grouped_projects.push(projects_data[i]);
-        project_counter++;
-        if (i == projects_data.length - 1) {
+        if (i % projects_per_row == 0) {
             total_grouped_projects.push(grouped_projects);
             grouped_projects = [];
-        }
-        else if (project_counter == projects_per_row) {
-            total_grouped_projects.push(grouped_projects);
-            grouped_projects = [];
-            project_counter = 0;
         }
     }
 

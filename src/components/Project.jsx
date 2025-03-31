@@ -14,7 +14,7 @@ function Project({ project_data }) {
     
     return (
         <div className="centered-project-box">
-            {<Link to={project.link}><img src={`/images/${project.img_name}`} alt={project.img_alt}/></Link>}
+            <img src={`/images/${project.img_name}`} alt={project.img_alt} />
             <Link to={project.link}><h4>{project.title}</h4></Link>
             <p>{project.description}</p>
         </div>
