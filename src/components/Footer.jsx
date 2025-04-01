@@ -6,7 +6,7 @@ import { FaBluesky } from 'react-icons/fa6';
 function Footer() {
     return (
         <footer>
-            <nav className='footer-padding'>
+            <nav>
                 <li className='hori-spacer'>
                     <FaHome className='colored-logo left-hori-spacer'/>
                     <div className='left-hori-spacer'/>
