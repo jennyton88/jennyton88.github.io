@@ -14,7 +14,7 @@ function Project({ project_data }) {
     
     return (
         <div className="centered-project-box">
-            <img src={`/images/${project.img_name}`} alt={project.img_alt} />
+            <img src={`/images/${project.img_name}`} alt={project.img_alt} style={{objectFit:'contain'}}/>
             <Link to={project.link}><h4>{project.title}</h4></Link>
             <p>{project.description}</p>
         </div>

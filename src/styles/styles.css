@@ -21,24 +21,17 @@
         vertical-align: sub;
     }
 
-    .sidebar {
-        margin: 0px auto;
-        padding: 0px 50px;
-        list-style: none;
-    }
-
     .topbar {
         top: 0;
         position: sticky;
         background-color: rgb(255, 220, 80);
         text-align: center;
         border-bottom: 10px solid white;
-        margin: 20px 0 0 0;
+        margin-top: 20px;
         padding: 10px;
     }
 
     .log {
-        padding: 0px 50px 50px 0px;
         max-width: 47rem;
     }
     
@@ -117,7 +110,6 @@
     }
 
     .log {
-        padding: 0px 50px 50px 30px;
         max-width: 47em;
     }
 
