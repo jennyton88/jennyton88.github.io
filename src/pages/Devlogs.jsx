@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-
+import Topbar from '../components/Topbar.jsx';
+import LogSummary from '../components/LogSummary.jsx';
 import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
-import LogMapper from '../components/LogMapper.jsx';
-import Sidebar from '../components/Sidebar.jsx';
+
 
 function Devlogs() {
     const [logList, setLogList] = useState([]);
@@ -18,7 +17,7 @@ function Devlogs() {
                 setLogList(id_list.split("\n"));
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
             });
         }
 
@@ -27,11 +26,15 @@ function Devlogs() {
     
     return (
         <div className="container">
-            <Header title={"Devlogs"} />
-            <div className="content">
-                <Sidebar />
-                <div className='log-list'>
-                    {logList.length == 0 ? <p>Loading...</p> : <LogMapper logs_data={logList}/>}
+            <header><h1 className='front-name'>Devlogs</h1></header>
+            <Topbar/>
+            <div style={{textAlign:'center'}}>
+                <div className="content" style={{textAlign:'left'}}>
+                    <h2>Most Recent Devlogs</h2>
+                    {
+                        logList.length == 0 ? <p>Loading...</p> : 
+                        <> {logList.map((log) => <LogSummary key={log} log_id={log}/>)} </>
+                    }
                 </div>
             </div>
             <Footer />

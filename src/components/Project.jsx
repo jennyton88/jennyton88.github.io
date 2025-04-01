@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Project({project_data}) {
+
+function Project({ project_data }) {
     const [project] = useState({
         title: project_data[1],
         img_name: project_data[2],
@@ -12,7 +14,7 @@ function Project({project_data}) {
     
     return (
         <div className="centered-project-box">
-            {<Link to={project.link}><img src={`/images/${project.img_name}`} alt={project.img_alt}/></Link>}
+            <img src={`/images/${project.img_name}`} alt={project.img_alt} />
             <Link to={project.link}><h4>{project.title}</h4></Link>
             <p>{project.description}</p>
         </div>

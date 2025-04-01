@@ -1,6 +1,18 @@
 000
 Plate, Rush, Serve!
 plate_logo.png
-Title of the game, "Plate, Rush, Serve!" in front of a background with food like flan and coffee on a table.
+Title of the game, "Plate, Rush, Serve!" in front of a background with flan and coffee on a table.
 A game about serving customers quickly.
 https://jennydevs.itch.io/plate-rush-serve
+001
+Void Village
+void_village.png
+Two animal villagers standing in front of a house with a flower on the right.
+Short experience in a village in the middle of nowhere.
+https://jennydevs.itch.io/void-village
+002
+Whisker's Farm
+whiskers_farm.png
+The back of a cat facing an ominous forest that fades aways into darkness.
+Mini Farming RPG in a small town.
+https://jennydevs.itch.io/whiskers-farm

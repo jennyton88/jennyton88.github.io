@@ -1,8 +1,7 @@
-E[2024.11.01]E
-D[2024.08.16]D
-T[[Creating the Website] Devlog #2: Continued Progress on the Website]T
-S[Website progress and overview of the rest of the sections.]S
-
+2024.11.01;
+2024.08.16;
+[Creating the Website] Devlog #2: Continued Progress on the Website;
+Website progress and overview of the rest of the sections.;
 ## >> Hello!
 
 Welcome back to the next devlog!
