@@ -1,7 +1,7 @@
-2024.12.03;
-2024.11.06;
-[Plate Rush! -> Plate, Rush, Serve!] Devlog #2: Customers / Fixing Items / Published!;
-I talk about the customers and how I store items differently.;
+2025.06.19
+2024.11.06
+[Plate Rush! -> Plate, Rush, Serve!] Devlog #2: Customers / Fixing Items / Published!
+I talk about the customers and how I store items differently.
 ## >> Game Published!
 
 Hello everyone! The game, *Plate Rush!* has been renamed to, *Plate, Rush, Serve!* Adding the third word in the title made it sound more like a countdown. Plate... Rush... SERVE!
