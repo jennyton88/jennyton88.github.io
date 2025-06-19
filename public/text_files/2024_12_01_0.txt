@@ -1,7 +1,7 @@
-2024.12.03;
-2024.12.01;
-[Creating the Website] Devlog #3: Revamp the Website;
-I removed a page, and components now move based on the width of the screen.;
+2025.06.19
+2024.12.01
+[Creating the Website] Devlog #3: Revamp the Website
+I removed a page, and components now move based on the width of the screen.
 ## >> Short Devlog
 Hello and welcome back to another devlog. I worked on the website again to change it up.
 

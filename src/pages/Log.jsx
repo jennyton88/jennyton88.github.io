@@ -11,7 +11,7 @@ function parseLogText(text_data) {
 
     var curr_index = 0;
     for (let i = 0; i < line_length; i++) {
-        curr_index = text_data.indexOf(";", curr_index + 1);
+        curr_index = text_data.indexOf("\n", curr_index + 1);
         indexes.push(curr_index);
     }
 
@@ -19,7 +19,6 @@ function parseLogText(text_data) {
         edit_date: text_data.substring(0, indexes[0]),
         creation_date: text_data.substring(indexes[0] + 1, indexes[1]),
         title: text_data.substring(indexes[1] + 1, indexes[2]),
-        summary: text_data.substring(indexes[2] + 1, indexes[3]),
         body: text_data.substring(indexes[3] + 1 ),
     };
 }
