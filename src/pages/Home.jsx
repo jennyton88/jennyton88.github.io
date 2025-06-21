@@ -10,10 +10,12 @@ function Home() {
             <Topbar />
             <div className='content'>
                 <h1>About Me</h1>
-                <p>Hi, I&apos;m Jenny Ton, a software developer!</p>
-                <p>I like to solve various problems and learn about interesting things. I&apos;m always on the lookout for subjects that interest me. Currently I&apos;m researching papermaking, specifically the different types of molds that shape the resulting paper.</p>
-                <p>As for my current project, I&apos;m working on an app to make devlogs easier to write and post. It&apos;ll be a tool that&apos;ll allow me to type and import text files for uploading to the website. If you&apos;re interested in my other works, my published projects are on display below.</p>
-                <h2>Recent Projects</h2>
+                <p>Hi, I like to create software.</p>
+                <p>I'm always on the lookout for subjects that interest me. I like solving various problems and learning about interesting things!</p>
+                <h2>What am I currently working on?</h2>
+                <p>I'm working on improving <a href="https://github.com/jennyton88/devlogs_maker">Devlogs Maker</a>, which you can find on my Github.</p>
+                <p>I also recently joined some game jams called <a href='https://itch.io/jam/32bitjam-summer-dreams'>32BitJam "Summer Dreams"</a> and <a href='https://itch.io/jam/3d-modelling-blender-jam'>3D Modelling Jam with Blender</a>, so check them out when the jams end.</p>
+                <h1>Recent Projects</h1>
                 <ProjectList/>
             </div>
             <Footer />

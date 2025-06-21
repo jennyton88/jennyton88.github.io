@@ -50,7 +50,7 @@ function LogSummary({log_id}) {
                 !log ? 
                     <p>Loading...</p> :
                     <div className="log-summary">
-                        <Link to={`log/${log_id}`}><h4>{log.title}</h4></Link>
+                        <Link to={`log/${log_id}`}><h2>{log.title}</h2></Link>
                         <p><em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}</p>
                         <Markdown>{log.summary}</Markdown>
                     </div>

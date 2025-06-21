@@ -11,8 +11,7 @@ function Contact() {
             <header><h1 className='front-name'>Contact Me</h1></header>
             <Topbar />
             <div className="content">
-                <h2>Contact me through my social media!</h2>
-                <p>Thank you for taking the time to visit.</p>
+                <h1>Contact me through my social media!</h1>
                 <nav style={{listStyle: 'none'}}>
                     <li>
                         <FaMastodon className='colored-logo'/>
@@ -25,6 +24,7 @@ function Contact() {
                         <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}>@jennydevs.bsky.social</Link>
                     </li>
                 </nav>
+                <p>Thanks for visiting!</p>
             </div>
             <Footer />
         </div>

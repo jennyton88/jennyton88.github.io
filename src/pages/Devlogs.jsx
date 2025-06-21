@@ -30,7 +30,7 @@ function Devlogs() {
             <Topbar/>
             <div style={{textAlign:'center'}}>
                 <div className="content" style={{textAlign:'left'}}>
-                    <h2>Most Recent Devlogs</h2>
+                    <h1>Recent Devlogs</h1>
                     {
                         logList.length == 0 ? <p>Loading...</p> : 
                         <> {logList.map((log) => <LogSummary key={log} log_id={log}/>)} </>
