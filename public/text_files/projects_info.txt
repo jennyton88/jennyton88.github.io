@@ -16,3 +16,15 @@ whiskers_farm.png
 The back of a cat facing an ominous forest that fades aways into darkness.
 Mini Farming RPG in a small town.
 https://jennydevs.itch.io/whiskers-farm
+003
+Prepare for Takeoff!
+prepare_for_takeoff.png
+Three buns being carried by a winged serpent as they are ready to takeoff from the dock.
+A rendered 3D scene made in Blender.
+https://jennydevs.itch.io/prepare-for-takeoff
+004
+Meddlesome Dreams
+meddlesome_dreams.png
+A title screen named "Meddlesome Dreams", with imagery of the shambu creature and a bun looking sleepy.
+3D Retro Puzzle Game made in Godot.
+https://jennydevs.itch.io/meddlesome-dreams
