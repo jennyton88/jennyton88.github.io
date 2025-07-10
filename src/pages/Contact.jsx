@@ -16,17 +16,12 @@ function Contact() {
                 <br/>
                 <nav style={{listStyle: 'none'}}>
                     <li>
-                        <FaMastodon className='colored-logo'/>
-                        <div className='left-hori-spacer' />
-                        <Link to={'https://mastodon.gamedev.place/@jennydevs'}>@jennydevs</Link>
+                        <Link to={'https://mastodon.gamedev.place/@jennydevs'}><FaMastodon className='colored-logo left-hori-spacer'/>@jennydevs@mastodon.gamedev.place</Link>
                     </li>
                     <li>
-                        <FaBluesky className='colored-logo'/>
-                        <div className='left-hori-spacer' />
-                        <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}>@jennydevs.bsky.social</Link>
+                        <Link to={'https://bsky.app/profile/jennydevs.bsky.social'}><FaBluesky className='colored-logo left-hori-spacer'/>@jennydevs.bsky.social</Link>
                     </li>
                 </nav>
-                <br/>
             </div>
             <Footer />
         </div>
