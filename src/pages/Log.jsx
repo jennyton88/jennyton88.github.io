@@ -58,6 +58,7 @@ function Log(){
                             <div className="log">
                                 <article>
                                     <h1>{log.title}</h1>
+                                    <hr/>
                                     <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
                                     <Markdown>{log.body}</Markdown>
                                 </article>
