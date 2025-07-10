@@ -69,16 +69,18 @@ header {
 footer {
     text-align: center;
     background-color: rgb(255, 220, 80);
-    padding: 20px 50px;
+    padding: 10px;
+}
+
+/* for use topbar and footer */
+.hori-spacer {
+    display: inline-block;
+    padding: 10px;
 
     list-style: none;
 }
 
-.hori-spacer {
-    display: inline-block;
-    padding-left: 10px;
-}
-
+/* between logo and link */
 .left-hori-spacer {
     display: inline-block;
     padding-right: 3px;
@@ -129,7 +131,7 @@ footer {
     /* footer */
 
     .hori-spacer {
-        padding-right: 30px;
+        padding-left: 40px;
     }
 
 
