@@ -1,0 +1,163 @@
+:root {
+    font-family: Open-Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    image-rendering: pixelated;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(148, 232, 244);
+    color: rgb(30, 44, 149);
+
+    font-size: 15px;
+}
+
+
+/* header area */
+
+header {
+    padding: 20px 50px 0 50px;
+}
+
+.front-name {
+    font-weight:900;
+    font-size: 5rem;
+}
+
+
+/* menu */
+
+.topbar {
+    top: 0;
+    position: sticky;
+    background-color: rgb(255, 220, 80);
+    text-align: center;
+    border-bottom: 10px solid white;
+    padding: 10px;
+}
+
+
+/* main content area */
+
+.container {
+    background-color: white;
+    max-width: 60em;
+    margin: auto;
+}
+
+.content {
+    margin: auto 10px;
+    padding: 20px;
+    background-color:rgb(255,252,178);
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 220, 80);
+    padding: 20px 50px;
+
+    list-style: none;
+}
+
+.hori-spacer {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.left-hori-spacer {
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.colored-logo {
+    vertical-align: sub;
+}
+
+
+/* logs */
+
+.log {
+    margin: auto;
+    max-width: 47rem;
+}
+
+.log-summary {
+    padding: 10px 0 0 0;
+}
+
+
+/* projects */
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.centered-project-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* landscape */
+
+@media screen and (min-width: 50em) {
+    /* footer */
+
+    .hori-spacer {
+        padding-right: 30px;
+    }
+
+
+    /* main content */
+
+    .content {
+        margin: auto 50px;
+        padding: 20px 20px 20px 20px;
+    }
+
+
+    /* projects */
+
+    .row {
+        flex-direction: row;
+        align-content: space-evenly;
+        column-gap: 20px;
+    }
+
+    .column {
+        flex: 1 1 auto;
+        align-content: auto;
+    }
+
+    .centered-project-box {
+        inline-size: 33%;
+
+        flex: auto;
+        align-self: center;
+    }
+}
