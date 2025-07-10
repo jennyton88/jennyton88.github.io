@@ -80,8 +80,14 @@ footer {
     border-top: 10px solid white;
 }
 
-/* for use topbar and footer */
 .hori-spacer {
+    display: inline-block;
+    padding: 10px;
+
+    list-style: none;
+}
+
+.hori-top-spacer {
     display: inline-block;
     padding: 10px;
 
@@ -140,7 +146,12 @@ footer {
     /* footer */
 
     .hori-spacer {
-        padding-left: 40px;
+        padding: 10px 10px 10px 45px;
+    }
+
+    
+    .hori-top-spacer {
+        padding: 10px 20px 10px 20px;
     }
 
 
