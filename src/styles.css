@@ -126,6 +126,7 @@ footer {
 .centered-project-box {
     display: flex;
     flex-direction: column;
+    min-width:0; /* stays within bounds of box */
     text-align: center;
 }
 
