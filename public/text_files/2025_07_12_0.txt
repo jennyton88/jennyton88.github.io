@@ -1,5 +1,5 @@
 2025.07.12
 2025.07.12
-Devlog Test
-Testing the posting and editing devlogs.
+Devlog Test Editing Some Text
+Testing the posting and editing devlogs. Edited again.
 This will be used to test the posting and editing of the devlog.
