@@ -1,6 +1,6 @@
-2025.06.19
+2025.07.12
 2025.06.17
-[Devlogs Maker] #2: Brief Overview of Basic Features
+[Devlogs Maker] #2: Brief Overview of Edited Features
 The minimum features in the app so far can: post devlogs; get devlogs & edit them; & delete devlogs. Import formatted devlogs & export them to system. Clear text for a clean slate. Verify/refresh tokens for user.
 ## >> Intro
 
