@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Markdown from 'react-markdown';
+
+import Header from '../components/Header.jsx';
 import Topbar from '../components/Topbar.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -52,7 +54,7 @@ function Log(){
                 !log ? 
                     <p>Loading...</p> :
                     <div className="container">
-                        <header><h1 className='front-name'>Devlog</h1></header>
+                        <Header header_data={'Devlog'}/>
                         <Topbar/>
                         <div className="content">
                             <div className="log">
