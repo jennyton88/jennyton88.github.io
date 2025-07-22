@@ -10,7 +10,9 @@ function Projects() {
             <Header header_data={'Projects'}/>
             <Topbar/>
             <div className='content'>
+                <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
                 <ProjectList/>
+                <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
             </div>
             <Footer />
         </div>

@@ -30,13 +30,13 @@ function Devlogs() {
         <div className="container">
             <Header header_data={'Devlogs'}/>
             <Topbar/>
-            <div style={{textAlign:'center'}}>
-                <div className="content" style={{textAlign:'left'}}>
-                    {
-                        logList.length == 0 ? <p>Loading...</p> : 
-                        <> {logList.map((log) => <LogSummary key={log} log_id={log}/>)} </>
-                    }
-                </div>
+            <div className="content">
+                <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
+                {
+                    logList.length == 0 ? <p>Loading...</p> : 
+                    <> {logList.map((log) => <LogSummary key={log} log_id={log}/>)} </>
+                }
+                <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
             </div>
             <Footer />
         </div>

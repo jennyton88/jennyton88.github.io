@@ -57,6 +57,7 @@ function Log(){
                         <Header header_data={'Devlog'}/>
                         <Topbar/>
                         <div className="content">
+                            <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
                             <div className="log">
                                 <article>
                                     <h1>{log.title}</h1>
@@ -64,8 +65,11 @@ function Log(){
                                     <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
                                     <Markdown>{log.body}</Markdown>
                                 </article>
-                                <Link to={"/devlogs"}>Return back to devlogs</Link>
+                                <div style={{textAlign:'center', paddingBottom:'20px'}}>
+                                    <Link to={"/devlogs"}>To devlogs</Link>
+                                </div>
                             </div>
+                            <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
                         </div>
                         <Footer />
                     </div>
