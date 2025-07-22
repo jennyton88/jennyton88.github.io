@@ -1,5 +1,6 @@
 import { useRouteError, useNavigate } from 'react-router-dom';
 
+import Header from '../components/Header.jsx';
 
 function Error() {
     const error = useRouteError();
@@ -7,9 +8,7 @@ function Error() {
 
     return (
         <div className='container' style={{textAlign:'center', paddingBottom:'50px'}}>
-            <header>
-                <h1 className='front-name'>{error.status || 'Error'}</h1>
-            </header>
+            <Header header_data={error.status || 'Error'}/>
             <p>{error.statusText || error.message}</p>
             { console.error(error) }
             <button  type="button" onClick={() => { navigate(-1); }}>Return to previous page</button>

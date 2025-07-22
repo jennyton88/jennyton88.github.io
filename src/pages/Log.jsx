@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Markdown from 'react-markdown';
+
+import Header from '../components/Header.jsx';
 import Topbar from '../components/Topbar.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -52,9 +54,10 @@ function Log(){
                 !log ? 
                     <p>Loading...</p> :
                     <div className="container">
-                        <header><h1 className='front-name'>Devlog</h1></header>
+                        <Header header_data={'Devlog'}/>
                         <Topbar/>
                         <div className="content">
+                            <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
                             <div className="log">
                                 <article>
                                     <h1>{log.title}</h1>
@@ -62,8 +65,11 @@ function Log(){
                                     <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
                                     <Markdown>{log.body}</Markdown>
                                 </article>
-                                <Link to={"/devlogs"}>Return back to devlogs</Link>
+                                <div style={{textAlign:'center', paddingBottom:'20px'}}>
+                                    <Link to={"/devlogs"}>To devlogs</Link>
+                                </div>
                             </div>
+                            <img src="/images/border.png" width="100%" height="100%" className='img-border'/>
                         </div>
                         <Footer />
                     </div>
