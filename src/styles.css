@@ -42,6 +42,8 @@ header {
 .front-name {
     font-weight:900;
     font-size: 5rem;
+    border-bottom: 10px solid transparent;
+    border-image: url('/images/border.png') 15;
 }
 
 
