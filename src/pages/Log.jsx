@@ -26,6 +26,13 @@ function parseLogText(text_data) {
 }
 
 
+function LogImg({img_data}) {
+    return (
+        <img src={img_data.src} alt={img_data.alt} style={{display: 'block', objectFit:'contain', margin: 'auto'}}/>
+    );
+}
+
+
 function Log(){
     const { log_id } = useParams();
     const [log, setLog] = useState({});
@@ -63,7 +70,17 @@ function Log(){
                                     <h1>{log.title}</h1>
                                     <hr/>
                                     <em>Edited:</em> {log.edit_date} / <em>Created:</em> {log.creation_date}
-                                    <Markdown>{log.body}</Markdown>
+                                    <Markdown 
+                                        components={{
+                                            img(props) {
+                                                const {node, src, alt} = props;
+
+                                                return (
+                                                    <LogImg img_data={{src, alt}} />
+                                                );
+                                            }
+                                        }}
+                                    >{log.body}</Markdown>
                                 </article>
                                 <div style={{textAlign:'center', paddingBottom:'20px'}}>
                                     <Link to={"/devlogs"}>To devlogs</Link>
