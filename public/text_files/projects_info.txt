@@ -28,3 +28,9 @@ meddlesome_dreams.png
 A title screen named "Meddlesome Dreams", with imagery of the shambu creature and a bun looking sleepy.
 3D Retro Puzzle Game made in Godot.
 https://jennydevs.itch.io/meddlesome-dreams
+005
+No Fish, No Refund!
+no_fish_no_refund.png
+A title screen with the words "No Fish No Refund!", with imagery of some groups of fish swimming to the right.
+A LOWREZJAM 2025 game submission where you must rush your way to the fish store to get the refund you deserve!
+https://jennydevs.itch.io/no-fish-no-refund
