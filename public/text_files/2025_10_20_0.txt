@@ -1,8 +1,8 @@
+2025.10.21
 2025.10.20
-2025.10.20
-The working post
-There is a test summary for you.
-Here is the test body paragraph for the world.
+Edited: The working post
+Edited: There is a test summary for you.
+Edited: Here is the test body paragraph for the world.
 
 ![A blob](/images/blob.png)
 
