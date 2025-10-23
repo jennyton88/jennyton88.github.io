@@ -4,4 +4,6 @@ A little blob
 A little blob to check uploading images.
 Blob
 ![a little blob](/images/blob.png)
-blob
+blob #2
+
+![a little blob but it's the second one](/images/blob2.png)
